@@ -1,6 +1,6 @@
 if [ ! -d "$HOME/.config/nvim" ]; then
   git clone https://github.com/LazyVim/starter ~/.config/nvim
-  rm -rf ~/.config/nvim.git
+  rm -rf ~/.config/nvim/.git
 
   # transparency
   mkdir -p ~/.config/nvim/plugin/after
