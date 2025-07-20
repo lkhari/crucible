@@ -1,0 +1,66 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "instructions": [
+    "CONTRIBUTING.md",
+    "docs/guidelines.md",
+    "docs/terminology.md",
+    ".cursor/rules/*.md"
+  ],
+  "mode": {
+    "docs": {
+      "prompt": "{file:./prompts/documentation.txt}",
+      "tools": {
+        "write": true,
+        "edit": true,
+        "bash": false,
+        "read": true,
+        "grep": true,
+        "glob": true
+      }
+    },
+    "review": {
+      "prompt": "{file:./prompts/review.txt}",
+      "tools": {
+        "write": false,
+        "edit": false,
+        "bash": false,
+        "read": true,
+        "grep": true,
+        "glob": true
+      }
+    },
+    "testing": {
+      "prompt": "{file:./prompts/testing.txt}",
+      "tools": {
+        "write": true,
+        "edit": true,
+        "bash": true,
+        "read": true,
+        "grep": true,
+        "glob": true
+      }
+    },
+    "refactor": {
+      "prompt": "{file:./prompts/refactor.txt}",
+      "tools": {
+        "write": true,
+        "edit": true,
+        "bash": true,
+        "read": true,
+        "grep": true,
+        "glob": true
+      }
+    },
+    "security": {
+      "prompt": "{file:./prompts/security.txt}",
+      "tools": {
+        "write": false,
+        "edit": true,
+        "bash": true,
+        "read": true,
+        "grep": true,
+        "glob": true
+      }
+    }
+  }
+}
