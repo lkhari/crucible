@@ -1,7 +1,5 @@
 FLATPAKS=(
-  "spotify"
   "discord"
-  "slack"
   "it.mijorus.smile"
 )
 

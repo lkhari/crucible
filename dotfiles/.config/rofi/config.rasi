@@ -1,0 +1,17 @@
+configuration {
+    modi: "drun,run";
+    font: "Sans 12";
+    show-icons: true;
+    display-drun: "Applications";
+    drun-display-format: "{name}";
+    sort: true;
+    sorting-method: "fzf";
+    matching: "fuzzy";
+    drun-match-fields: "name,generic,exec,categories,keywords";
+    steal-focus: true;
+    grab-keyboard: true;
+    auto-select: false;
+    click-to-exit: true;
+}
+
+@theme "theme"
