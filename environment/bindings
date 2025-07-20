@@ -1,1 +1,4 @@
 bindkey -s ^f "powerkey\n"
+
+# History search and navigation
+bindkey '^R' history-incremental-search-backward  # Ctrl+R for history search

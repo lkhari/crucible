@@ -18,7 +18,7 @@ EXTENSIONS=(
   "space-bar@luchrioh"
   "undecorate@sun.wxg@gmail.com"
   "tophat@fflewddur.github.io"
-  "smile-gnome-extension@mijorus"
+  "smile-extension@mijorus.it"
 )
 
 for ext in "${EXTENSIONS[@]}"; do

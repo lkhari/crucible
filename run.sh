@@ -117,4 +117,8 @@ for installer in install/terminal/*.sh; do source $installer; done
 
 for installer in install/desktop/*.sh; do source $installer; done
 
+# Set up dotfiles (override any configs created by install scripts)
+echo "Setting up dotfiles..."
+./dotfiles-setup.sh
+
 echo "Setup complete! You may want to reboot your system."

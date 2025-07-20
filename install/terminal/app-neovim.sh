@@ -10,6 +10,8 @@ if [ ! -d "$HOME/.config/nvim" ]; then
   cp config/nvim/catppuccin.lua ~/.config/nvim/lua/plugins/theme.lua
 
   # no animation
-  cp config/nvim/snack-animated-scrolling-off.lua ~/.config/nvim/lua/plugins/
+  cp config/nvim/snacks-animated-scrolling-off.lua ~/.config/nvim/lua/plugins/
+  # monorepo look at git not package json
+  cp config/nvim/monorepo.lua ~/.config/nvim/lua/plugins/
 
 fi

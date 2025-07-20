@@ -1,6 +1,6 @@
 [user]
 	email = lkhari@users.noreply.github.com
-	name = Hari 
+	name = lkhari 
 # [url "ssh://git@github.com/"]
 #   insteadOf = https://github.com/
 [pull]
@@ -13,3 +13,5 @@
 	allow = always
 [core]
 	editor = nvim
+[push]
+	autoSetupRemote = true
