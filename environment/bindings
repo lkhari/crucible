@@ -2,3 +2,12 @@ bindkey -s ^f "powerkey\n"
 
 # History search and navigation
 bindkey '^R' history-incremental-search-backward  # Ctrl+R for history search
+
+# Key bindings for navigation and editing
+bindkey '^[[3~' delete-char                        # Delete key
+bindkey '^[[1;5C' forward-word                     # Ctrl+Right
+bindkey '^[[1;5D' backward-word                    # Ctrl+Left
+bindkey '^[[H' beginning-of-line                   # Home key
+bindkey '^[[F' end-of-line                         # End key
+bindkey '^[[3;5~' kill-word                        # Ctrl+Delete
+bindkey '^H' backward-kill-word                    # Ctrl+Backspace
