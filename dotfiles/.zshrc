@@ -33,7 +33,14 @@ eval "$(starship init zsh)"
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+# Enable completion system
+autoload -Uz compinit
+compinit
+
 for f in ~/crucible/environment/*; do source $f; done
+
+# Enable git completion for specific aliases
+compdef '_git-checkout' gch
 
 # pnpm
 export PNPM_HOME="/home/l/.local/share/pnpm"
